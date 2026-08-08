@@ -1,58 +1,58 @@
 export const restaurant = {
   name: "Alma Guimarães",
-  tagline: "Cozinha de Autor",
+  tagline: "Onde a alma encontra o sabor.",
   city: "Guimarães, Portugal",
-  address: "Rua de Santa Maria, 42, 4800-443 Guimarães, Portugal",
-  phone: "+351 253 000 100",
-  phoneHref: "+351253000100",
-  email: "reservas@almaguimaraes.pt",
+  address: "R. João de Melo 20, 4810-431 Guimarães, Portugal",
+  phone: "+351 939 445 079",
+  phoneHref: "+351939445079",
+  email: "",
   mapsEmbed:
-    "https://www.google.com/maps?q=Rua+de+Santa+Maria+Guimaraes+Portugal&output=embed",
-  mapsLink: "https://maps.google.com/?q=Rua+de+Santa+Maria+Guimaraes+Portugal",
+    "https://www.google.com/maps?q=R.+João+de+Melo+20,+4810-431+Guimarães&output=embed",
+  mapsLink:
+    "https://www.google.com/maps?q=R.+João+de+Melo+20,+4810-431+Guimarães",
   social: {
-    instagram: "https://instagram.com",
-    facebook: "https://facebook.com",
-    twitter: "https://twitter.com",
+    instagram: "https://www.instagram.com/restaurantealmaguimaraes/",
+    facebook: "",
+    twitter: "",
   },
 }
 
 export const hours = [
-  { day: "Segunda-feira", time: "Encerrado" },
-  { day: "Terça a Quinta", time: "19:00 — 23:00" },
-  { day: "Sexta e Sábado", time: "12:30 — 15:00 · 19:00 — 00:00" },
-  { day: "Domingo", time: "12:30 — 16:00" },
+  { day: "Segunda-feira", time: "Consultar restaurante" },
+  { day: "Terça-feira", time: "Consultar restaurante" },
+  { day: "Quarta-feira", time: "Consultar restaurante" },
+  { day: "Quinta-feira", time: "Consultar restaurante" },
+  { day: "Sexta-feira", time: "Consultar restaurante" },
+  { day: "Sábado", time: "Consultar restaurante" },
+  { day: "Domingo", time: "Consultar restaurante" },
 ]
 
 export const featuredDishes = [
   {
-    name: "Vieira & Couve-flor",
-    description:
-      "Vieira selada, puré aveludado de couve-flor, manteiga tostada e folha de ouro.",
-    price: "28",
+    name: 'Camarão à "Guilho"',
+    description: "Camarão à guilho com coentros.",
+    price: "15",
     image: "/images/dish-1.png",
-    tag: "Entrada",
+    tag: "Para partilhar",
   },
   {
-    name: "Wagyu & Trufa Negra",
-    description:
-      "Lombo de wagyu maturado, jus de trufa negra do Alentejo e ervas do jardim.",
-    price: "46",
+    name: "Naco Minhota",
+    description: "Naco de carne com acompanhamento e molho.",
+    price: "29",
     image: "/images/dish-2.png",
-    tag: "Principal",
+    tag: "Carne",
   },
   {
-    name: "Ostras & Caviar",
-    description:
-      "Ostras da Ria de Aveiro, caviar Oscietra e um toque de citrinos frescos.",
-    price: "34",
+    name: "Bacalhau à Lagareiro",
+    description: "Bacalhau à lagareiro.",
+    price: "27",
     image: "/images/dish-3.png",
-    tag: "Do Mar",
+    tag: "Peixe",
   },
   {
-    name: "Chocolate & Ouro",
-    description:
-      "Ganache de chocolate Valrhona, coulis de frutos vermelhos e folha de ouro comestível.",
-    price: "16",
+    name: "Tentação",
+    description: "Mousse de chocolate e pó de morango.",
+    price: "8",
     image: "/images/dish-4.png",
     tag: "Sobremesa",
   },
@@ -66,60 +66,87 @@ export type MenuItem = {
 
 export const menu: { category: string; items: MenuItem[] }[] = [
   {
-    category: "Entradas",
+    category: "Para partilhar",
     items: [
       {
-        name: "Vieira & Couve-flor",
-        description:
-          "Vieira selada, puré aveludado de couve-flor, manteiga tostada e folha de ouro.",
-        price: "28",
+        name: "Couvert",
+        description: "Pão, manteiga artesanal e azeite.",
+        price: "3,50",
       },
       {
-        name: "Ostras & Caviar",
-        description:
-          "Ostras da Ria de Aveiro, caviar Oscietra e um toque de citrinos frescos.",
-        price: "34",
+        name: 'Camarão à "Guilho"',
+        description: "Camarão à guilho com coentros.",
+        price: "15",
       },
       {
-        name: "Foie Gras & Figo",
-        description:
-          "Foie gras escalfado, compota de figo do Douro e brioche tostado.",
-        price: "26",
+        name: "Croquetes",
+        description: "Alheira com maionese de paprika.",
+        price: "9",
       },
       {
-        name: "Tártaro de Atum",
-        description:
-          "Atum do Atlântico, abacate, gengibre, sésamo negro e emulsão de yuzu.",
-        price: "24",
+        name: "Camembert",
+        description: "Camembert com mel e ervas aromáticas.",
+        price: "14",
+      },
+      {
+        name: "Ceviche",
+        description: "Ceviche tradicional.",
+        price: "12",
+      },
+      {
+        name: "Pimentos Padrón",
+        description: "Pimentos Padrón.",
+        price: "9",
       },
     ],
   },
   {
-    category: "Principais",
+    category: "Carne na brasa",
     items: [
       {
-        name: "Wagyu & Trufa Negra",
-        description:
-          "Lombo de wagyu maturado, jus de trufa negra do Alentejo e ervas do jardim.",
-        price: "46",
+        name: "Naco Minhota",
+        description: "Acompanhamento e molho.",
+        price: "29",
       },
       {
-        name: "Robalo Selvagem",
-        description:
-          "Robalo selvagem, beurre blanc de açafrão, espargos verdes e caviar de limão.",
-        price: "38",
+        name: "Plumas de Porco Preto Ibérico",
+        description: "Plumas de porco preto ibérico.",
+        price: "29",
+      },
+    ],
+  },
+  {
+    category: "Peixe",
+    items: [
+      {
+        name: "Bacalhau à Lagareiro",
+        description: "Bacalhau à lagareiro.",
+        price: "27",
       },
       {
-        name: "Cabrito de Barroso",
-        description:
-          "Cabrito estufado lentamente, puré de castanha e redução de vinho do Porto.",
-        price: "36",
+        name: "Polvo ao Alho e Coentros",
+        description: "Polvo ao alho e coentros.",
+        price: "26",
       },
+    ],
+  },
+  {
+    category: "Acompanhamentos",
+    items: [
       {
-        name: "Risotto de Cogumelos",
-        description:
-          "Risotto carnaroli, cogumelos selvagens, parmesão de 24 meses e trufa branca.",
-        price: "30",
+        name: "Patatas",
+        description: "Acompanhamento de batata.",
+        price: "4",
+      },
+    ],
+  },
+  {
+    category: "Menu Infantil",
+    items: [
+      {
+        name: "Bife de Novilho com Batatas Fritas",
+        description: "Bife de novilho acompanhado de batatas fritas.",
+        price: "17",
       },
     ],
   },
@@ -127,88 +154,270 @@ export const menu: { category: string; items: MenuItem[] }[] = [
     category: "Sobremesas",
     items: [
       {
-        name: "Chocolate & Ouro",
-        description:
-          "Ganache de chocolate Valrhona, coulis de frutos vermelhos e folha de ouro.",
-        price: "16",
+        name: "Carpaccio",
+        description: "Manga, abacaxi e frutos vermelhos.",
+        price: "7",
       },
       {
-        name: "Pastel de Nata Reinventado",
-        description:
-          "Interpretação de autor do clássico português, canela e caramelo salgado.",
-        price: "14",
+        name: "Escabeche",
+        description: "Frutas marinadas com gelado.",
+        price: "7,50",
       },
       {
-        name: "Soufflé de Baunilha",
-        description:
-          "Soufflé de baunilha de Madagáscar, gelado de nata e tuile de amêndoa.",
-        price: "15",
+        name: "Tentação",
+        description: "Mousse de chocolate e pó de morango.",
+        price: "8",
+      },
+      {
+        name: "Sopa",
+        description: "Sobremesa apresentada no menu como Sopa.",
+        price: "6,50",
       },
     ],
   },
   {
-    category: "Vinhos & Bar",
+    category: "Vinho Branco",
     items: [
       {
-        name: "Vinho Verde Reserva",
-        description: "Casa da região do Minho, cítrico e mineral. (copo / garrafa)",
-        price: "9 / 42",
+        name: "Sequeira",
+        description:
+          "Malvasia fina, rabacato, gouveio e códega do larinho — Douro.",
+        price: "36",
       },
       {
-        name: "Douro Tinto Grande Reserva",
-        description: "Encorpado, notas de frutos negros e especiarias. (copo / garrafa)",
-        price: "14 / 68",
+        name: "Grambeira",
+        description:
+          "Códega do larinho, rabigato e viosinho — Douro.",
+        price: "22",
       },
       {
-        name: "Champagne Brut",
-        description: "Seleção da casa, fino e persistente. (copo / garrafa)",
-        price: "18 / 95",
+        name: "Quinta dos Lagares",
+        description:
+          "Códega do larinho, rabigato e viosinho — Douro.",
+        price: "38",
+      },
+      {
+        name: "Chão da Quinta",
+        description: "Encruzado — Dão.",
+        price: "38",
+      },
+      {
+        name: "Ditado",
+        description: "Rabigato, gouveio e arinto — Douro.",
+        price: "26",
+      },
+      {
+        name: "Dezoito by Maniche",
+        description:
+          "Viosinho, gouveia, arinto e moscatel galego.",
+        price: "33",
+      },
+    ],
+  },
+  {
+    category: "Espumante & Champagne",
+    items: [
+      {
+        name: "H. Blin",
+        description: "Pinot Meunier, Chardonnay e Pinot Noir — Champagne.",
+        price: "59",
+      },
+      {
+        name: "Ruinart Blanc de Blancs",
+        description: "Chardonnay — Champagne.",
+        price: "135",
+      },
+      {
+        name: "Quinta do Rol Rosé",
+        description: "Pinot Noir — Lisboa.",
+        price: "33",
+      },
+      {
+        name: "Quinta da Rabiana",
+        description: "Arinto — Minho.",
+        price: "38",
+      },
+      {
+        name: "Quinta Pousada de Fora",
+        description: "Loureiro e Arinto — Minho.",
+        price: "25",
+      },
+      {
+        name: "Colinas Cuvée Brut Nature",
+        description: "Chardonnay — Bairrada.",
+        price: "37",
+      },
+      {
+        name: "Veuve Clicquot",
+        description: "Champagne.",
+        price: "105",
+      },
+    ],
+  },
+  {
+    category: "Vinho Tinto",
+    items: [
+      {
+        name: "Grambeira",
+        description:
+          "Touriga Nacional, Touriga Franca e Tinta Roriz — Douro.",
+        price: "22",
+      },
+      {
+        name: "Guadelim 2009",
+        description:
+          "Aragonês, Alfrocheiro, Alicante Bouschet, Tinta Caiada e Moreto — Alentejo.",
+        price: "62",
+      },
+      {
+        name: "Espera",
+        description: "Vinho tinto.",
+        price: "29",
+      },
+      {
+        name: "Circii",
+        description:
+          "Touriga Nacional, Touriga Franca, Syrah e Aragonez — Alentejo.",
+        price: "25",
+      },
+      {
+        name: "Maria Izabel 2018",
+        description:
+          "Tinta Roriz, Tinto Cão, Touriga Nacional, Sousão e Touriga Franca — Douro.",
+        price: "67",
+      },
+      {
+        name: "Dezoito by Maniche",
+        description:
+          "Touriga Nacional, Touriga Franca e Sousão.",
+        price: "33",
+      },
+      {
+        name: "Quinta das Mós",
+        description: "Tinta Cão — Douro.",
+        price: "27",
+      },
+      {
+        name: "Quinta das Mós",
+        description: "Vinho tinto.",
+        price: "24",
+      },
+    ],
+  },
+  {
+    category: "Vinho Verde",
+    items: [
+      {
+        name: "Quinta Pousada de Fora",
+        description: "Vinho Verde.",
+        price: "17",
+      },
+      {
+        name: "Phulia",
+        description: "Vinho Verde.",
+        price: "19",
+      },
+      {
+        name: "Rabiana — Arinto",
+        description: "Vinho Verde.",
+        price: "22",
+      },
+      {
+        name: "Rabiana — Loureiro",
+        description: "Vinho Verde.",
+        price: "23",
+      },
+      {
+        name: "Encosta do Rolão",
+        description: "Vinho Verde.",
+        price: "18",
+      },
+      {
+        name: "Incomun",
+        description: "Vinho Verde.",
+        price: "18",
+      },
+      {
+        name: "Pecebrico",
+        description: "Vinho Verde.",
+        price: "16",
       },
     ],
   },
 ]
 
-export const reviews = [
-  {
-    quote:
-      "Uma experiência gastronómica que roça a perfeição. Cada prato é uma obra de arte e o serviço é impecável.",
-    author: "Maria Fernandes",
-    role: "Crítica Gastronómica",
-  },
-  {
-    quote:
-      "O melhor jantar que tive em Portugal. A ligação entre tradição e inovação é simplesmente extraordinária.",
-    author: "James Whitfield",
-    role: "The Culinary Review",
-  },
-  {
-    quote:
-      "Do primeiro ao último momento, tudo foi cinematográfico. Alma Guimarães merece todas as estrelas.",
-    author: "Sofia Almeida",
-    role: "Hóspede Habitual",
-  },
-]
+/*
+ * Reviews
+ *
+ * Do NOT put AI-generated reviews here.
+ * These should only contain real reviews supplied by the restaurant
+ * or copied from a verified review platform.
+ */
+export const reviews = []
 
+/*
+ * Verified public information available from current listings.
+ *
+ * The restaurant's Google rating was supplied separately by the owner/user,
+ * so it should not be replaced with an invented value.
+ *
+ * No Michelin-star claim is included.
+ */
 export const stats = [
-  { value: 18, suffix: "", label: "Anos de excelência" },
-  { value: 2, suffix: "", label: "Estrelas Michelin" },
-  { value: 40, suffix: "+", label: "Produtores locais" },
-  { value: 12, suffix: "k", label: "Convidados por ano" },
+  { value: 4.9, suffix: "", label: "Avaliação" },
+  { value: 89, suffix: "", label: "Avaliações no TheFork" },
+  { value: 23, suffix: "€", label: "Preço médio" },
 ]
 
 export const galleryImages = [
-  { src: "/images/gallery-1.png", alt: "Mesa posta com velas e taças de vinho" },
-  { src: "/images/dish-2.png", alt: "Lombo de wagyu com trufa negra" },
-  { src: "/images/gallery-3.png", alt: "Chef a finalizar um prato com pinça" },
-  { src: "/images/interior.png", alt: "Interior elegante do restaurante" },
-  { src: "/images/gallery-5.png", alt: "Bar do restaurante com prateleiras iluminadas" },
-  { src: "/images/dish-3.png", alt: "Ostras e caviar sobre gelo" },
-  { src: "/images/gallery-4.png", alt: "Pão artesanal e azeite" },
-  { src: "/images/gallery-2.png", alt: "Sommelier a servir vinho tinto" },
-  { src: "/images/dish-1.png", alt: "Vieira com puré de couve-flor" },
-  { src: "/images/gallery-6.png", alt: "Aperitivo com flores comestíveis" },
-  { src: "/images/dish-4.png", alt: "Sobremesa de chocolate com folha de ouro" },
-  { src: "/images/chef.png", alt: "Chef executivo na cozinha" },
+  {
+    src: "/images/gallery-1.png",
+    alt: "Alma Restaurante Guimarães",
+  },
+  {
+    src: "/images/dish-2.png",
+    alt: "Prato do Alma Restaurante",
+  },
+  {
+    src: "/images/gallery-3.png",
+    alt: "Cozinha do Alma Restaurante",
+  },
+  {
+    src: "/images/interior.png",
+    alt: "Interior do Alma Restaurante Guimarães",
+  },
+  {
+    src: "/images/gallery-5.png",
+    alt: "Espaço do Alma Restaurante",
+  },
+  {
+    src: "/images/dish-3.png",
+    alt: "Prato de peixe do Alma Restaurante",
+  },
+  {
+    src: "/images/gallery-4.png",
+    alt: "Mesa do Alma Restaurante",
+  },
+  {
+    src: "/images/gallery-2.png",
+    alt: "Vinho no Alma Restaurante",
+  },
+  {
+    src: "/images/dish-1.png",
+    alt: "Prato do Alma Restaurante",
+  },
+  {
+    src: "/images/gallery-6.png",
+    alt: "Prato do Alma Restaurante",
+  },
+  {
+    src: "/images/dish-4.png",
+    alt: "Sobremesa do Alma Restaurante",
+  },
+  {
+    src: "/images/chef.png",
+    alt: "Equipa do Alma Restaurante",
+  },
 ]
 
 export const navLinks = [
